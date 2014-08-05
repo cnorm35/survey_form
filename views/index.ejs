@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= title %></title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+    <link rel="stylesheet" type="text/css" href="/stylesheets/bootstrap.min.css">
+  </head>
+  <body>
+  	<div class='container'>
+	    <h1><%= title %></h1>
+	    <form action='/process' method='post' class='form-group'>
+	    	Your Name:<input type='text' name='name' class='form-control'/>
+	    	Dojo Location: <select name='location' class='form-control'>
+	    						<option value='Mountain View, CA'>Mountain View</option>
+	    						<option value='Seattle, WA'>Seattle</option>
+	    				   </select>
+	    	Favorite Language:<select name='language' class='form-control'>
+	    						<option value='Javascript'>Vanilla Javascript</option>
+	    						<option value='Node'>Node JS</option>
+	    						<option value='Rails'>Rails</option>
+	    						<option value='PHP'>PHP</option>
+	    				      </select>
+	    	Comment:<textarea name='comment' class='form-control'>
+	    			</textarea>
+	    			<input type='submit' value='Submit' class='form-control btn btn-info'/>
+	    	</form>
+    </div>
+  </body>
+</html>
