@@ -4,6 +4,12 @@
     <title><%= title %></title>
     <link rel='stylesheet' href='/stylesheets/style.css' />
     <link rel="stylesheet" type="text/css" href="/stylesheets/bootstrap.min.css">
+    <script src='/socket.io/socket.io.js'></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script>
+    	
+    </script>
+
   </head>
   <body>
   	<div class='container'>
@@ -20,10 +26,11 @@
 	    						<option value='Rails'>Rails</option>
 	    						<option value='PHP'>PHP</option>
 	    				      </select>
-	    	Comment:<textarea name='comment' class='form-control'>
-	    			</textarea>
+	    	Comment:<textarea name='comment' class='form-control'></textarea>
 	    			<input type='submit' value='Submit' class='form-control btn btn-info'/>
 	    	</form>
     </div>
+
+
   </body>
 </html>

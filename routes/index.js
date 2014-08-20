@@ -1,7 +1,9 @@
 module.exports = function Route(app){
 	app.get('/', function(req, res){
-		res.render('index', {title: 'Survey Page'});
+		res.render('client', {title: 'Survey Page'});
 	});
+
+	
 
 	app.post('/process', function(req, res){
 		console.log(req.body);
